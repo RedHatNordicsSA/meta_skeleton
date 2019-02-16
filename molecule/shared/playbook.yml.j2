@@ -1,5 +1,6 @@
 - name: converge
   hosts: all
+  become: true
   roles:
     - role: {{ role_name }}
   post_tasks: []
